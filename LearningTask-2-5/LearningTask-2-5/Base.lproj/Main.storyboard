@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LearningTask_2_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzg-JH-pQ4" userLabel="View Cabecalho">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="295.33333333333331"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="viE-iG-PkE" userLabel="View Zup">
+                                        <rect key="frame" x="294" y="71" width="72" height="72"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcG-vx-btF" userLabel="Label Zup">
+                                                <rect key="frame" x="8" y="35.333333333333329" width="56" height="28.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                                <color key="textColor" name="Summertime"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Cornflower"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="3TB-5v-4ev"/>
+                                            <constraint firstAttribute="bottom" secondItem="NcG-vx-btF" secondAttribute="bottom" constant="8" id="IfQ-Y9-ttm"/>
+                                            <constraint firstItem="NcG-vx-btF" firstAttribute="leading" secondItem="viE-iG-PkE" secondAttribute="leading" constant="8" id="eJm-uL-mUZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="NcG-vx-btF" secondAttribute="trailing" constant="8" id="jbI-Ch-d3f"/>
+                                            <constraint firstAttribute="width" constant="72" id="wfq-Rp-ZfV"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boas vindas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1f-NW-hIO" userLabel="Label Titulo">
+                                        <rect key="frame" x="24" y="138.66666666666666" width="342" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
+                                        <color key="textColor" name="Black Haze"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faça login com sua conta" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1S3-VQ-hmJ" userLabel="Label Subtitulo">
+                                        <rect key="frame" x="24" y="185.66666666666666" width="342" height="21.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="Black Haze"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Sawtooth Aak"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1S3-VQ-hmJ" secondAttribute="trailing" constant="24" id="6DW-02-BKk"/>
+                                    <constraint firstItem="1S3-VQ-hmJ" firstAttribute="top" secondItem="r1f-NW-hIO" secondAttribute="bottom" constant="4" id="DS8-LK-I5U"/>
+                                    <constraint firstItem="r1f-NW-hIO" firstAttribute="trailing" secondItem="1S3-VQ-hmJ" secondAttribute="trailing" id="YIj-wX-cYK"/>
+                                    <constraint firstItem="1S3-VQ-hmJ" firstAttribute="leading" secondItem="mzg-JH-pQ4" secondAttribute="leading" constant="24" id="ZCE-qk-vga"/>
+                                    <constraint firstItem="r1f-NW-hIO" firstAttribute="leading" secondItem="1S3-VQ-hmJ" secondAttribute="leading" id="hKQ-ZD-Ti5"/>
+                                    <constraint firstAttribute="trailing" secondItem="viE-iG-PkE" secondAttribute="trailing" constant="24" id="yeW-Oc-xjG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2N-7Y-iwk" userLabel="View Login">
+                                <rect key="frame" x="24" y="231.33333333333334" width="342" height="389.33333333333326"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GE1-zB-6hu" userLabel="TextField Email">
+                                        <rect key="frame" x="24" y="24" width="294" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="LED-j0-AgD"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lGd-2F-mSl" userLabel="View Borda Email">
+                                        <rect key="frame" x="24" y="71.999999999999972" width="294" height="1"/>
+                                        <color key="backgroundColor" name="Black Haze"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="zXM-2m-cab"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6w0-pC-FNq" userLabel="TextField Senha">
+                                        <rect key="frame" x="24" y="104.99999999999997" width="294" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="DmI-Mp-9oJ"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05r-XI-5Xr" userLabel="View Borda Senha">
+                                        <rect key="frame" x="24" y="152.99999999999997" width="294" height="1"/>
+                                        <color key="backgroundColor" name="Black Haze"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="0xg-KS-6O0"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4I-gc-k4x" userLabel="Button Login">
+                                        <rect key="frame" x="24" y="201.99999999999997" width="294" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="vWU-kh-tff"/>
+                                        </constraints>
+                                        <color key="tintColor" name="Cornflower"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Login" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <color key="baseForegroundColor" name="Black Haze"/>
+                                            <color key="baseBackgroundColor" name="Cornflower"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ou" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUH-Bu-MEf" userLabel="Label Ou">
+                                        <rect key="frame" x="161.66666666666666" y="262" width="19" height="19.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <color key="textColor" systemColor="tertiaryLabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7f-Q1-RhS" userLabel="Button Google Login">
+                                        <rect key="frame" x="24" y="293.33333333333326" width="294" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="6pX-94-94P"/>
+                                        </constraints>
+                                        <color key="tintColor" name="Cornflower"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Login com Google" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <color key="baseBackgroundColor" name="Cornflower"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="lGd-2F-mSl" firstAttribute="top" secondItem="GE1-zB-6hu" secondAttribute="bottom" id="0y3-qo-EhF"/>
+                                    <constraint firstItem="lGd-2F-mSl" firstAttribute="leading" secondItem="GE1-zB-6hu" secondAttribute="leading" id="2mr-Sx-VjR"/>
+                                    <constraint firstItem="x4I-gc-k4x" firstAttribute="top" secondItem="05r-XI-5Xr" secondAttribute="bottom" constant="48" id="6iR-la-ZD0"/>
+                                    <constraint firstItem="EUH-Bu-MEf" firstAttribute="centerX" secondItem="x4I-gc-k4x" secondAttribute="centerX" id="9Wv-dC-Nr7"/>
+                                    <constraint firstItem="6w0-pC-FNq" firstAttribute="top" secondItem="lGd-2F-mSl" secondAttribute="bottom" constant="32" id="AgS-3J-Iuw"/>
+                                    <constraint firstAttribute="bottom" secondItem="y7f-Q1-RhS" secondAttribute="bottom" constant="48" id="CBc-qH-W6H"/>
+                                    <constraint firstItem="x4I-gc-k4x" firstAttribute="trailing" secondItem="05r-XI-5Xr" secondAttribute="trailing" id="CNV-GP-870"/>
+                                    <constraint firstItem="GE1-zB-6hu" firstAttribute="leading" secondItem="Z2N-7Y-iwk" secondAttribute="leading" constant="24" id="CwT-Vz-o6G"/>
+                                    <constraint firstItem="05r-XI-5Xr" firstAttribute="trailing" secondItem="6w0-pC-FNq" secondAttribute="trailing" id="HhR-zo-fDn"/>
+                                    <constraint firstItem="05r-XI-5Xr" firstAttribute="top" secondItem="6w0-pC-FNq" secondAttribute="bottom" id="J7x-6M-wFk"/>
+                                    <constraint firstItem="y7f-Q1-RhS" firstAttribute="top" secondItem="EUH-Bu-MEf" secondAttribute="bottom" constant="12" id="Jy9-22-VKU"/>
+                                    <constraint firstItem="GE1-zB-6hu" firstAttribute="top" secondItem="Z2N-7Y-iwk" secondAttribute="top" constant="24" id="KLe-eh-uqG"/>
+                                    <constraint firstItem="05r-XI-5Xr" firstAttribute="leading" secondItem="6w0-pC-FNq" secondAttribute="leading" id="Ouy-Bm-fai"/>
+                                    <constraint firstItem="EUH-Bu-MEf" firstAttribute="top" secondItem="x4I-gc-k4x" secondAttribute="bottom" constant="12" id="PUY-VP-gBy"/>
+                                    <constraint firstItem="y7f-Q1-RhS" firstAttribute="centerX" secondItem="x4I-gc-k4x" secondAttribute="centerX" id="XXY-P0-ca9"/>
+                                    <constraint firstItem="6w0-pC-FNq" firstAttribute="trailing" secondItem="GE1-zB-6hu" secondAttribute="trailing" id="Y25-9O-0qY"/>
+                                    <constraint firstItem="lGd-2F-mSl" firstAttribute="trailing" secondItem="GE1-zB-6hu" secondAttribute="trailing" id="gPr-L0-eeQ"/>
+                                    <constraint firstItem="x4I-gc-k4x" firstAttribute="leading" secondItem="05r-XI-5Xr" secondAttribute="leading" id="hIH-ca-Ews"/>
+                                    <constraint firstAttribute="trailing" secondItem="GE1-zB-6hu" secondAttribute="trailing" constant="24" id="jKg-Df-asV"/>
+                                    <constraint firstItem="6w0-pC-FNq" firstAttribute="leading" secondItem="GE1-zB-6hu" secondAttribute="leading" id="sZV-dG-K4D"/>
+                                    <constraint firstItem="y7f-Q1-RhS" firstAttribute="width" secondItem="x4I-gc-k4x" secondAttribute="width" id="wMb-lU-cd9"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Black Haze"/>
+                        <constraints>
+                            <constraint firstItem="Z2N-7Y-iwk" firstAttribute="top" secondItem="mzg-JH-pQ4" secondAttribute="bottom" constant="-64" id="2GR-V2-jCS"/>
+                            <constraint firstItem="Z2N-7Y-iwk" firstAttribute="top" secondItem="1S3-VQ-hmJ" secondAttribute="bottom" constant="24" id="Ut6-0K-Jn1"/>
+                            <constraint firstItem="viE-iG-PkE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="aNT-Bh-FPz"/>
+                            <constraint firstItem="Z2N-7Y-iwk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="gaG-uz-EWF"/>
+                            <constraint firstItem="mzg-JH-pQ4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="io2-ZX-xp1"/>
+                            <constraint firstItem="mzg-JH-pQ4" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.35" id="lZy-8F-LXi"/>
+                            <constraint firstItem="mzg-JH-pQ4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mMU-6l-Zoq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z2N-7Y-iwk" secondAttribute="trailing" constant="24" id="mW6-LP-t2a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mzg-JH-pQ4" secondAttribute="trailing" id="zuS-b5-5oH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.846153846153847" y="-34.123222748815166"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Black Haze">
+            <color red="0.95294117647058818" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Cornflower">
+            <color red="0.32941176470588235" green="0.42745098039215684" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Sawtooth Aak">
+            <color red="0.94509803921568625" green="0.56470588235294117" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Summertime">
+            <color red="0.96078431372549022" green="0.80392156862745101" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
